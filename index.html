@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html >
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+<link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+
+<title>
+</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+
+
+
+
+<link type="text/css" href="stylemobile.css" rel="stylesheet"/>
+<link type="text/css" href="styles/form_mobile.css" rel="stylesheet"/>
+
+
+
+	
+
+
+
+</head>
+<body >
+
+<!--MOBILE MENU-->
+
+<div id="rotate">
+
+<div id="menu">
+  <!-- <img src="images/wss-circle-logo2.svg" id="logomenu"> -->
+
+  <div class="menubtn_wrapper">
+    <div class="wss_logo" ><img src="images/wss-circle-logo2.svg" ></div>
+
+    <div class="btn_wrapper">
+      <button id="button2" class="myform" form="myform"><span>SUBMIT</span></button>
+      <button id="button3" class="myform" form="myform3"><span>SUBMIT</span></button>
+      <!-- <button class="myform" form="myform"><div class="menubutton" id="button2"><a >SUBMIT</a></div></button>
+      <button class="myform2" form="myform2"><div class="menubutton" id="button3"><a >SUBMIT</a></div></button> -->
+    </div>
+
+    <div class="nav_wrapper">
+    <ul>
+      <li><div id="menu0">HOME</div></li>
+      <li><div id="menu3">RSVP</div></li>
+      <li><div id="menu5">CONTACT</div></li>
+    </ul>
+    </div>
+    <!-- <div class="menubutton" id="menu0" ><a href="#">&nbsp;HOME&nbsp;</a></div>
+    <div class="menubutton" id="menu3" ><a href="#">&nbsp;RSVP&nbsp;</a></div>
+    <div class="menubutton" id="menu5" ><a href="#">CONTACT</a></div> -->
+    
+  </div>
+
+</div>
+
+<!--VIDEO TRAILER-->
+
+
+<div id="videowrap">
+<p>X</p>
+
+<iframe src="" width="400" height="225" frameborder="0" webkitallowfullscreen
+                    mozallowfullscreen allowfullscreen id="video"></iframe>
+
+</div>
+
+
+
+
+
+
+
+<!--LOADING SCREEN-->
+
+
+<div id="loader">
+    <div  class='uil-ring-css' >
+  <div></div>
+</div>
+</div>  
+
+
+
+<!--FORMS-->
+
+
+<div id="bigcontainer">
+
+
+
+
+
+<div id="contact1" class="movement">
+  <div id="contact_form" class="form_page">
+    <p class="title">Contact</p>
+    <p class="subheader">For all media and press concerns please use the form below. All fields required except for Company and Title.</p>
+    <form id="myform2" action="contactform.php" method="post">
+      <div class="group_form">
+        <div class="left"><label for="type">Type</label></div>
+        <div class="right">
+          <select id="type" class="select_type" name="selectrsvp" placeholder="Select Type">
+            <option value="" disabled selected>Select Type</option>
+            <option value="Agent">Agent</option>
+            <option value="Director">Director</option>
+            <option value="Media">Media</option>
+            <option value="Producer">Producer</option>
+            <option value="Publicist">Publicist</option>
+            <option value="Press">Press</option>
+            <option value="Talent">Talent</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="first_name">First Name</label></div>
+        <div class="right"><input type="text" id="first_name" name="name1" placeholder="Enter Your First Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="last_name">Last Name</label></div>
+        <div class="right"><input type="text" id="last_name" name="name2" placeholder="Enter Your Last Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="company">Company</label></div>
+        <div class="right"><input type="text" id="company" name="name3" placeholder="Enter Company Name" required></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label for="email">Email Address</label></div>
+        <div class="right"><input type="email" id="email" name="name4" placeholder="Enter Email Address" required></div>
+        <div class="full">
+          <input type="checkbox" id="form_check" name="check" class="form_check"><label class="check_lbl" for="form_check">I would like to be considered for future events</label>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="guest">Guest Requested</label></div>
+        <div class="right"><input type="text" id="guest" name="name5" placeholder="Enter Number of Guests"></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label for="info">Additional Information</label></div>
+        <div class="full">
+          <textarea type="text" id="info" name="name6" placeholder="Enter Any Additional Information"></textarea>
+        </div>
+      </div>
+      <div class="group_form full_row submit_btn">
+        <div class="btn_wrapper">
+          <button class="myform" form="myform"><span>SUBMIT</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<div id="rsvp" class="movement">
+  <div id="rsvp_form" class="form_page">
+    <p class="title">RSVP <em>Répondez s'il vous plaît, Reply if you please</em></p>
+    <p class="subheader">If you would like to attend our special screening event please fill out all required fields below and then click the SUBMIT button. You will receive email confirmation of your RSVP pending available seating. If you are bringing a guest or RSVPing on behalf of someone, please specify those names in “Additional Information” below.</p>
+    <form id="myform" action="riform.php" method="post">
+      <div class="group_form">
+        <div class="left"><label for="type">Type</label></div>
+        <div class="right">
+          <select id="type" class="select_type" name="selectrsvp" placeholder="Select Type">
+            <option value="" disabled selected>Select Type</option>
+            <option value="Agent">Agent</option>
+            <option value="Director">Director</option>
+            <option value="Media">Media</option>
+            <option value="Producer">Producer</option>
+            <option value="Publicist">Publicist</option>
+            <option value="Press">Press</option>
+            <option value="Talent">Talent</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="first_name">First Name</label></div>
+        <div class="right"><input type="text" id="first_name" name="name1" placeholder="Enter Your First Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="last_name">Last Name</label></div>
+        <div class="right"><input type="text" id="last_name" name="name2" placeholder="Enter Last Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="company">Company</label></div>
+        <div class="right"><input type="text" id="company" name="name3" placeholder="Enter Company Name" required></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label for="email">Email Address</label></div>
+        <div class="right"><input type="email" id="email" name="email" placeholder="Enter Email Address" required></div>
+        <div class="full">
+          <input type="checkbox" id="form_check" name="check" class="name4"><label class="check_lbl" for="form_check">I would like to be considered for future events</label>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="phone">Phone Number</label></div>
+        <div class="right"><input type="text" id="phone" name="name5" placeholder="Enter Phone Number" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label for="guest">Guest Requested</label></div>
+        <div class="right"><input type="text" id="guest" name="name6" placeholder="Enter Number of Guests"></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label for="info">Additional Information</label></div>
+        <div class="full">
+          <textarea type="text" id="info" name="special2" placeholder="Enter Any Additional Information"></textarea>
+        </div>
+      </div>
+      <div class="group_form full_row submit_btn">
+        <div class="btn_wrapper">
+          <button class="myform" form="myform2"><span>SUBMIT</span></button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--HOMEPAGE-->
+
+
+
+
+<div id="wrapper">
+
+
+
+
+<div id="container" >
+
+
+<ul id="scene" data-friction-x="0.1"
+  data-friction-y="0.1"  data-limit-y="25" data-origin-y="0.83" data-origin-x="0.50" class="scene" style=" margin:0;padding:0;">
+
+
+
+
+			<li class="layer" data-depth="0.70" >
+<img id="background" src="WSS3_1-blue2.jpg" width=100% height=100% >
+
+
+
+
+</li>
+
+
+
+
+
+<li class="layer" data-depth="0.40" >
+
+<img src="pillarsnew.png" width=100% height=100% class="image1">
+
+
+<span id="chain1">
+<img  src="chainsnew1.png" width=100% height=100% id="chain" style=" border: 1px solid rgba(0, 0, 0, 0);" >
+</span>
+
+
+
+<span id="chain3">
+<img  src="chainsnew3.png" width=100% height=100% name="chainani" id="chain" style=" border: 1px solid rgba(0, 0, 0, 0);" >
+</span>
+
+
+</li>
+
+
+			<li class="layer" data-depth="0.70" >
+<img src="light4.png" width=100% height=100% class="image1">
+
+<div id="dustcon">
+<img class="image1"  id="dust1" src="dust1.png" width=100% height=100%  style=" border: 1px solid rgba(0, 0, 0, 0);">
+
+
+<img class="image1" id="dust2" src="dust2.png" width=100% height=100%  style=" border: 1px solid rgba(0, 0, 0, 0);">
+
+<img class="image1"  id="dust3" src="dust3.png" width=100% height=100%  style=" border: 1px solid rgba(0, 0, 0, 0);">
+</div>
+
+<div id="dustcon2">
+<img class="image1" name="dustani" id="dust3" src="dust4.png" width=100% height=100%  style=" border: 1px solid rgba(0, 0, 0, 0);">
+</div>
+
+
+
+
+
+</li>
+
+
+
+<li class="layer" data-depth="0.55" >
+
+<span id="chain2">
+<img  src="chainsnew2.png" width=100% height=100%  id="chain5" style=" border: 1px solid rgba(0, 0, 0, 0);" >
+</span>
+
+
+
+<img src="chain4.png" id="chain4" >
+
+
+<img src="pillarsnew2.png" id="pillar" >
+
+
+
+
+
+
+</li>			
+
+
+
+<li class="layer" data-depth="0.48" >
+<span id="graphic1" >
+<img  src="bg-upper-nav.png" width=100% height=100% ></span>
+</li>
+
+
+
+			
+
+<li class="layer" data-depth="0.30" >
+
+
+
+<img src="character.png" id="char" >
+
+
+
+
+
+</li>
+
+<li class="layer" data-depth="0.48" >
+<span id="graphic" href="http://www.w3schools.com">
+<img  src="bg-footer-left.png" width=100% height=100% ></span>
+
+</li>
+
+
+
+
+
+<li id="wanted" class="layer" data-depth="0.35" >
+
+
+
+
+<img src="logo.png" class="logo" >
+
+
+<img  src="logo1.png"  id="logo">
+
+
+
+
+
+<img src="blackscreen2.png" id="blackout">
+<img src="blackscreen.png" id="blackout2">
+
+<div id="footer2"  >
+<p align="justify" style="padding-top:9px;">Song "Pandora" courtesy of composer Pascal Tatipata. All artwork and content (C) Origins of Light and West Side Swordy, All Rights Reserved. Website by HALO CREATIVE, a Los Angeles Design Firm.</p>
+</div>
+
+
+<img id="footer" src="footer2.png"  >
+
+
+
+
+
+<div class="nav-top">
+	
+
+		<ul type="none">
+                                <li class="menutop" id="menu0"><a  href="#">HOME</a></li>
+			
+				<li class="menutop" id="menu3"><a  href="#">RSVP</a></li>
+			
+				<li class="menutop" id="menu5"><a  href="#">CONTACT</a></li>
+				
+</ul>
+</div>
+
+
+
+<div id="wrap">
+<a id="icon1" class="icon"  href="https://twitter.com/westsideswordy"  target="_blank" >
+<img class="show" src="icon1.png" width=100%  style="border:none;" >
+<img class="hide" src="icon1h.png" width=100%  style="border:none;" >
+</a>
+
+
+
+
+<a  id="icon2" class="icon" href="http://www.facebook.com/WestSideSwordy"  target="_blank">
+<img class="show" src="icon2.png" width=100%  style="border:none;" >
+<img class="hide" src="icon2h.png" width=100%  style="border:none;" >
+</a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<a  id="trailer" class="icon" href="#" >
+
+<img  src="movie-trailer.png" width=auto height=100%  style="border:none;position:absolute;">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<script src="jquery-1.2.6.pack.js">
+
+</script>
+
+<script src="javamobile.js"></script>
+
+
+
+<script src="jquer.js">
+
+</script>
+
+<script src="jquery.parallax.js"></script>
+
+<script> $('#scene').parallax();
+
+	</script>
+
+
+
+
+
+<script>
+jQuery(window).load(function () {
+
+video=1;
+
+$("#blackout2").css('display','block');
+$("#blackout2").css('opacity','1');
+
+$('#loader').fadeOut("slow", function() {
+   
+$('#loader').remove();
+
+ 
+
+$("#video").attr('src', "//www.youtube.com/embed/wWf4WTp0RAA?autoplay=1");
+$("#videowrap").css('display','block');   
+})
+
+
+
+});
+
+</script>
+
+</body>
+
+
+</html>
