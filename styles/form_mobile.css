@@ -295,70 +295,92 @@ input[type=checkbox] {
 }
 
 @media screen and (orientation: landscape) {
-  #menu {
-    height: 7.8vw;
-  }
-  .wss_logo {
-    width: 3.2vw;
-    margin-top: 2.2vw;
-  }
-  .btn_wrapper {
-    width: 8.5vw;
-    margin-top: 1.8vw;
-  }
-  .menubtn_wrapper ul li {
-    padding: 2.8vw 2.2vw;
-    font-size: 2.2vw;
-  }
-  .menubtn_wrapper .nav_wrapper ul {
-    width: 35vw;
-  }
-  .form_page {
-    margin-top: 7.8vw;
-  }
-  .form_page .title {
-    margin-bottom: 2.2vw;
-    padding-top: 2.2vw;
-  }
-  .form_page .subheader {
-    margin-bottom: 2.2vw;
-  }
-  .form_page .group_form {
-    padding-top: 1.4vw;
-    padding-bottom: 1.4vw;
-  }
-  .form_page .full {
-    margin-top: 1vw;
-  }
-  .btn_wrapper button {
-    padding: 1.1vw 1.1vw 1vw;
-  }
-
-  input[type=checkbox] {
-    vertical-align: -0.1vw;
-    width: 2vw !important;
-  }
-
-  #button2 a,
-  #button3 a,
-  .menubutton a,
-  .btn_wrapper button {
-    font-size: 1.6vw;
-  }
-  .form_page .title {
-    font-size: 2.7vw;
-  }
-  .form_page .subheader, {
-    font-size: 2.2vw
-  }
-  .form_page label,
-  .form_page select,
-  .form_page input,
-  .form_page textarea {
-    font-size: 2.3vw;
-  }
-  .form_page .check_lbl {
-    font-size: 1.7vw;
-  }
+  
+#menu {
+  height: 7.8vw;
+}
+.wss_logo {
+  width: 3.2vw;
+  margin-top: 2.2vw;
+}
+.menubtn_wrapper ul li {
+  padding: 2.8vw 2.2vw;
+  font-size: 2.2vw;
+}
+.menubtn_wrapper .nav_wrapper ul {
+  width: 60vh;
+  margin-left: -5vh;
+}
+.form_page {
+  margin-top: 7.8vw;
+  height: calc(100% - 7.8vw);
+}
+.form_page .title {
+  margin-bottom: 2.2vw;
+  padding-top: 4.2vw;
+}
+.form_page .subheader {
+  margin-bottom: 2.2vw;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  padding-left: 0.5vw;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  padding-left: 0.5vw;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-left: 0.5vw;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  padding-left: 0.5vw;
+}
+textarea {
+  margin-left: -2vw;
+}
+.form_page textarea {
+  margin-top: 3vw;
+}
+.form_page .group_form {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+.form_page .full {
+  margin-top: 1vw;
+}
+input[type=checkbox] {
+  vertical-align: -0.1vw;
+  width: 2vw !important;
+}
+.form_page .full label {
+  padding-left: 3vw;
+}
+.form_page select,
+.form_page input,
+.form_page textarea {
+  width: calc(100% - 10px);
+}
+.btn_wrapper button {
+  padding: 2.7vw 2.2vw 3.2vw;
+  font-size: 2.2vw;
+}
+.submit_btn .btn_wrapper button {
+  padding: 2.1vw 4vw 2vw;
+  font-size: 2.5vw;
+}
+.form_page .title {
+  font-size: 2.7vw;
+}
+.form_page .subheader {
+  font-size: 2.2vw;
+}
+.form_page label,
+.form_page select,
+.form_page input,
+.form_page textarea {
+  font-size: 2.6vw;
+}
+.form_page .check_lbl {
+  font-size: 1.7vw;
+}
 }
 

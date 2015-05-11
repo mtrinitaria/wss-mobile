@@ -113,19 +113,16 @@ $("#menu").css("visibility","visible");
 
 
 
-$("#rotate").css("transform","rotate(-90deg)");
-$("#rotate").css("position","fixed");
-
-$("#rotate").css("left",(1*($(window).width()-$(window).height()))/2+'px');
-$("#rotate").css("top",(-1*($(window).width()-$(window).height()))/2+'px');
-$("#rotate").css("height",$(window).width()+'px');
-$("#rotate").css("width",$(window).height()+'px');
-$("#rotate").css("visibility","visible");
-
 }
 else{
 $(".nav-top").css("visibility","visible");
 $("#menu").css("visibility","hidden");
+
+
+
+
+
+}
 
 
 $("#rotate").css("position","fixed");
@@ -135,10 +132,6 @@ $("#rotate").css("height",$(window).height()+'px');
 $("#rotate").css("left","0%");
 $("#rotate").css("top","0%");
 $("#rotate").css("visibility","visible");
-
-
-
-}
 
 
 }
@@ -158,7 +151,9 @@ $(".movement").css('transform',"translateX(0%)");
 
 
 doOnOrientationChange();
- window.addEventListener('resize', doOnOrientationChange);
+
+
+window.addEventListener('resize', doOnOrientationChange);
 
 
 
