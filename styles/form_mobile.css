@@ -24,6 +24,7 @@
 
 #menu {
   height: 7.8vh;
+  height: 13.8vw;
   overflow: hidden;
 }
 #logomenu {
@@ -39,9 +40,11 @@ select#type {
 
 .wss_logo {
   width: 3.2vh;
+  width: 5.6vw;
   float: left;
   margin-left: 5%;
   margin-top: 2.2vh;
+  margin-top: 3.8vw;
   position: relative;
   z-index: 1;
 }
@@ -75,7 +78,9 @@ select#type {
   color: #000;
   list-style: none;
   padding: 2.8vh 2.2vh;
+  padding: 5vw 3.8vw;
   font-size: 2.2vh;
+  font-size: 3.8vw;
 }
 .menubtn_wrapper .nav_wrapper {
   position: absolute;
@@ -146,15 +151,18 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 7.8vh;
+  margin-top: 13.8vw;
   height: calc(100% - 7.8vh);
+  height: calc(100% - 13.8vw);
   overflow-y: scroll;
 }
 
 .form_page .title {
   font-family: 'ProximaNova-Light' !important;
-  font-size: 1.4em;
   margin-bottom: 2.2vh;
+  margin-bottom: 3.8vw;
   padding-top: 4.2vh;
+  padding-top: 7.6vw;
 }
 .form_page .title em {
   font-size: 80%;
@@ -163,6 +171,7 @@ body {
 
 .form_page .subheader {
   margin-bottom: 2.2vh;
+  margin-bottom: 3.8vw;
   line-height: 1.2;
   font-family: 'HelveticaNeue-UltraLight' !important;
   /*-webkit-font-smoothing : none;
@@ -192,7 +201,7 @@ body {
 }
 
 textarea {
-  margin-left: -2vh;
+  /*margin-left: -2vh;*/
 }
 .form_page textarea {
   margin-top: 3vh;
@@ -205,6 +214,8 @@ textarea {
   width: 100%;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  padding-top: 5.4vw;
+  padding-bottom: 5.4vw;
   border-bottom: 1px solid #3e3e3e;
 }
 .form_page .group_form:last-child {
@@ -241,6 +252,7 @@ input[type=checkbox] {
   margin: 0;
   padding: 0;
   width: 2vh !important;
+  width: 3.7vw !important;
   position: absolute;
   top: 0;
 }
@@ -269,29 +281,37 @@ input[type=checkbox] {
 .btn_wrapper button {
   padding: 2.7vh 2.2vh 3.2vh;
   font-size: 2.2vh;
+  padding: 4.8vw 3.9vw 5.4vw;
+  font-size: 3.9vw;
 }
 .submit_btn .btn_wrapper button {
   padding: 2.1vh 4vh 2vh;
+  padding: 3.6vw 7vw 3.5vw;
   border-radius: 6px;
   font-size: 2.5vh;
+  font-size: 4.4vw;
 }
 
 
 .form_page .title {
   font-size: 2.7vh;
+  font-size: 4.8vw;
 }
 .form_page .subheader {
   font-size: 2.2vh;
+  font-size: 3.9vw;
 }
 .form_page label,
 .form_page select,
 .form_page input,
 .form_page textarea {
   font-size: 2.6vh;
+  font-size: 4.6vw;
   white-space: nowrap;
 }
 .form_page .check_lbl {
   font-size: 1.7vh;
+  font-size: 3vw;
 }
 
 @media screen and (orientation: landscape) {
