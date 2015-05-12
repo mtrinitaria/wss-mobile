@@ -22,6 +22,16 @@
   height: 100%;
 }
 
+#wrapper {
+  z-index: 1;
+}
+#contact1 {
+  z-index: 2;
+}
+#rsvp {
+  z-index: 3;
+}
+
 #menu {
   height: 7.8vh;
   height: 13.8vw;
@@ -145,6 +155,7 @@ body {
 #menu *,
 .form_page * {
   font-family: 'ProximaNova-Light' !important;
+  poi
 }
 
 .form_page {
@@ -154,7 +165,7 @@ body {
   margin-top: 13.8vw;
   height: calc(100% - 7.8vh);
   height: calc(100% - 13.8vw);
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .form_page .title {

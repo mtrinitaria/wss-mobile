@@ -139,7 +139,7 @@ pointer-events:none;
 
 left:200%;
 
-border: 1px solid rgba(0, 0, 0, 0);
+/*border: 1px solid rgba(0, 0, 0, 0);*/
 }
 
 
@@ -159,7 +159,7 @@ z-index:2;
 pointer-events:none;
 left:400%;
 
-border: 1px solid rgba(0, 0, 0, 0);
+/*border: 1px solid rgba(0, 0, 0, 0);*/
 }
 
 .movement{
