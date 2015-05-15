@@ -34,6 +34,8 @@ var rotcheck = 0;
 /*ROTATION FUNCTION*/
 
 function doOnOrientationChange() {
+  document.getElementById('rsvp_form').style.marginTop = document.getElementById('nav').offsetHeight + 'px';
+  document.getElementById('contact_form').style.marginTop = document.getElementById('nav').offsetHeight + 'px';
 
   marleft = $(window).width() * 4 * .005;
   marleft = marleft * 12;
@@ -537,3 +539,50 @@ $(document).ready(function() {
 
 
 });
+
+(function(){
+  'use strict'
+
+  function isTouchDevice(){
+    try{
+      document.createEvent("TouchEvent");
+      return true;
+    }catch(e){
+      return false;
+    }
+  }
+
+
+  function touchScroll(id){
+    if(isTouchDevice()){ //if touch events exist...
+      var el=document.getElementById(id);
+      var scrollStartPos=0;
+      // console.log(document.getElementById('nav').offsetHeight)
+      el.style.marginTop = document.getElementById('nav').offsetHeight + 'px';
+   
+      el.addEventListener("touchstart", function(event) {
+        scrollStartPos=-parseInt(this.style.marginTop.split('px')[0])+event.touches[0].pageY;
+        // event.preventDefault();
+      },false);
+   
+      el.addEventListener("touchmove", function(event) {
+        var dy = -(scrollStartPos-event.touches[0].pageY);
+        if (dy > document.getElementById('menu').offsetHeight) {
+          dy = document.getElementById('menu').offsetHeight;
+        } else if (dy <= -(this.offsetHeight - window.innerHeight)) {
+          dy = -(this.offsetHeight - window.innerHeight);
+        }
+        // console.log(dy, -(this.offsetHeight - window.innerHeight))
+        this.style.marginTop = dy + 'px';
+        // event.preventDefault();
+      },false);
+    }
+  }
+
+  $(document).ready(function() {
+    // alert(isTouchDevice());
+    touchScroll('contact_form');
+    touchScroll('rsvp_form');
+  });
+
+})();

@@ -33,9 +33,9 @@
 }
 
 #menu {
-  height: 7.8vh;
-  height: 13.8vw;
+  height: auto;
   overflow: hidden;
+  display: inline-block;
 }
 #logomenu {
   position: absolute;
@@ -51,10 +51,12 @@ select#type {
 .wss_logo {
   width: 3.2vh;
   width: 5.6vw;
+  width: 20px;
   float: left;
   margin-left: 5%;
   margin-top: 2.2vh;
   margin-top: 3.8vw;
+  margin-top: 10px;
   position: relative;
   z-index: 1;
 }
@@ -65,11 +67,13 @@ select#type {
   float: right;
   position: relative;
   z-index: 3;
+  width: 20%;
 }
 
 .btn_wrapper button {
   background-color: #d3d5d6;
   color: #000;
+  float: right;
 }
 
 .submit_btn .btn_wrapper {
@@ -91,21 +95,27 @@ select#type {
   padding: 5vw 3.8vw;
   font-size: 2.2vh;
   font-size: 3.8vw;
+
+  padding: 1.315em 1em;
+  font-size: 1.0302em;
 }
 .menubtn_wrapper .nav_wrapper {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   text-align: center;
   z-index: 2;
+  float: right;
 }
 .menubtn_wrapper .nav_wrapper ul {
   display: inline-block;
   white-space: nowrap;
   width: 60vw;
   margin-left: -5vw;
+  width: 100%;
+  margin-left: -8%;
 }
 .menubtn_wrapper .nav_wrapper ul li:first-child {
   padding-left: 0;
@@ -126,19 +136,6 @@ body {
   color: #fff;
   background: #111;
   height: 100%;
-
-  // Text Rendering
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-
-  // Remove Text Rendering optimizeLegibility for Android 4.3 and 4.2
-  .browser-name-android.browser-version-4-3 &,
-  .browser-name-android.browser-version-4-2-1 &,
-  .browser-name-android.browser-version-4-2-2 &,
-  .browser-name-android.browser-version-4-2-3 &,
-  {
-      text-rendering: auto;
-  }
 }
 
 /* reset */
@@ -155,7 +152,6 @@ body {
 #menu *,
 .form_page * {
   font-family: 'ProximaNova-Light' !important;
-  poi
 }
 
 .form_page {
@@ -164,8 +160,9 @@ body {
   margin-top: 7.8vh;
   margin-top: 13.8vw;
   height: calc(100% - 7.8vh);
-  height: calc(100% - 13.8vw);
-  overflow: scroll;
+  /*height: 100%;*/
+  height: auto;
+  /*overflow-y: auto;*/
 }
 
 .form_page .title {
@@ -244,6 +241,7 @@ textarea {
   float: left;
   width: 100%;
   margin-top: 1vh;
+  margin-top: 0.482em;
   position: relative;
 }
 .form_page label {
@@ -272,15 +270,16 @@ input[type=checkbox] {
   display: inline-block;
   vertical-align: middle;
   padding-left: 3vh;
+  padding-left: 1.778em;
 }
 .form_page select,
 .form_page input,
 .form_page textarea {
   color: #6e6e6e;
   font-style: italic;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: calc(100% - 10px);
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
 }
 .form_page textarea {
   padding-left: 0;
@@ -291,9 +290,12 @@ input[type=checkbox] {
 }
 .btn_wrapper button {
   padding: 2.7vh 2.2vh 3.2vh;
-  font-size: 2.2vh;
   padding: 4.8vw 3.9vw 5.4vw;
+  font-size: 2.2vh;
   font-size: 3.9vw;
+
+  padding: 1.225em 1em 1.375em;
+  font-size: 1.06em;
 }
 .submit_btn .btn_wrapper button {
   padding: 2.1vh 4vh 2vh;
@@ -325,93 +327,10 @@ input[type=checkbox] {
   font-size: 3vw;
 }
 
-@media screen and (orientation: landscape) {
-  
-#menu {
-  height: 7.8vw;
-}
-.wss_logo {
-  width: 3.2vw;
-  margin-top: 2.2vw;
-}
-.menubtn_wrapper ul li {
-  padding: 2.8vw 2.2vw;
-  font-size: 2.2vw;
-}
-.menubtn_wrapper .nav_wrapper ul {
-  width: 60vh;
-  margin-left: -5vh;
-}
-.form_page {
-  margin-top: 7.8vw;
-  height: calc(100% - 7.8vw);
-}
-.form_page .title {
-  margin-bottom: 2.2vw;
-  padding-top: 4.2vw;
-}
-.form_page .subheader {
-  margin-bottom: 2.2vw;
-}
-::-webkit-input-placeholder { /* WebKit browsers */
-  padding-left: 0.5vw;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  padding-left: 0.5vw;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  padding-left: 0.5vw;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  padding-left: 0.5vw;
-}
-textarea {
-  margin-left: -2vw;
-}
-.form_page textarea {
-  margin-top: 3vw;
-}
-.form_page .group_form {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-.form_page .full {
-  margin-top: 1vw;
-}
-input[type=checkbox] {
-  vertical-align: -0.1vw;
-  width: 2vw !important;
-}
-.form_page .full label {
-  padding-left: 3vw;
-}
-.form_page select,
-.form_page input,
-.form_page textarea {
-  width: calc(100% - 10px);
-}
-.btn_wrapper button {
-  padding: 2.7vw 2.2vw 3.2vw;
-  font-size: 2.2vw;
-}
-.submit_btn .btn_wrapper button {
-  padding: 2.1vw 4vw 2vw;
-  font-size: 2.5vw;
-}
-.form_page .title {
-  font-size: 2.7vw;
-}
-.form_page .subheader {
-  font-size: 2.2vw;
-}
-.form_page label,
-.form_page select,
-.form_page input,
-.form_page textarea {
-  font-size: 2.6vw;
-}
-.form_page .check_lbl {
-  font-size: 1.7vw;
-}
-}
 
+
+@media screen and (orientation: landscape) {
+  .menubtn_wrapper ul li {
+    /*font-size: 1em;*/
+  }
+}
