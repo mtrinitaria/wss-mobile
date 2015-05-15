@@ -112,6 +112,10 @@ $(document).ready(function() {
 
 
 
+  $(".movement").css('-webkit-transform', "translateX(0%)");
+  $(".movement").css('-moz-transform', "translateX(0%)");
+  $(".movement").css('-ms-transform', "translateX(0%)");
+  $(".movement").css('-o-transform', "translateX(0%)");
   $(".movement").css('transform', "translateX(0%)");
 
 
@@ -247,6 +251,10 @@ $(document).ready(function() {
     var int = setInterval(function() {
 
       $(".movement").css('opacity', '1');
+      $(".movement").css('-webkit-transform', "translateX(-200%)");
+      $(".movement").css('-moz-transform', "translateX(-200%)");
+      $(".movement").css('-ms-transform', "translateX(-200%)");
+      $(".movement").css('-o-transform', "translateX(-200%)");
       $(".movement").css('transform', "translateX(-200%)");
       doOnOrientationChange();
       $("#button3").css('display', 'none');
@@ -343,6 +351,10 @@ $(document).ready(function() {
     var int = setInterval(function() {
 
       $(".movement").css('opacity', '1');
+      $(".movement").css('-webkit-transform', "translateX(-400%)");
+      $(".movement").css('-moz-transform', "translateX(-400%)");
+      $(".movement").css('-ms-transform', "translateX(-400%)");
+      $(".movement").css('-o-transform', "translateX(-400%)");
       $(".movement").css('transform', "translateX(-400%)");
       doOnOrientationChange();
 
@@ -464,6 +476,10 @@ $(document).ready(function() {
       marginLeft: '0%'
     });
 
+    $(".movement").css('-webkit-transform', "translateX(0%)");
+    $(".movement").css('-moz-transform', "translateX(0%)");
+    $(".movement").css('-ms-transform', "translateX(0%)");
+    $(".movement").css('-o-transform', "translateX(0%)");
     $(".movement").css('transform', "translateX(0%)");
 
 
@@ -500,43 +516,23 @@ $(document).ready(function() {
 
 
   /*ICON HOVER FUNCTIONS*/
+  $(".icon").mouseover(function() {
+    $(this).children(".hide").fadeTo(300, 1);
+    $(this).children(".show").fadeTo(300, 0);
+  });
 
-
-
-
-  $(".icon").mouseover(
-    function() {
-      $(this).children(".hide").fadeTo(300, 1);
-
-      $(this).children(".show").fadeTo(300, 0);
-
-
-    });
-
-  $(".icon").mouseout(
-    function() {
-
-      $(this).children(".show").fadeTo(300, 1);
-      $(this).children(".hide").fadeTo(300, 0);
-
-    });
-
-
-
+  $(".icon").mouseout(function() {
+    $(this).children(".show").fadeTo(300, 1);
+    $(this).children(".hide").fadeTo(300, 0);
+  });
 
   $("form#input2").submit(function(e) {
     e.preventDefault();
   });
 
-
   $("textarea#select2,textarea#textarea").focus(function(e) {
-
     e.preventDefault();
-
   });
-
-
-
 
 });
 
