@@ -65,7 +65,7 @@ width:400px;
 }
 
 #videowrap p{
-  float: right;
+  float: left;
   color: #ffffff;
   
   display: inline-block;
