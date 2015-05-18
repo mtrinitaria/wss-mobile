@@ -21,7 +21,12 @@
 <link type="text/css" href="styles/form_mobile.css" rel="stylesheet"/>
 
 
+<style>
+.black{
+background-color:red;
 
+}
+</style>
 	
 
 
@@ -160,8 +165,8 @@
 
 <div id="rsvp" class="movement">
   <div id="rsvp_form" class="form_page">
-    <p class="title">RSVP <em>RÈpondez s'il vous plaÓt, Reply if you please</em></p>
-    <p id="subheader" class="subheader">If you would like to attend our special screening event please fill out all required fields below and then click the SUBMIT button. You will receive email confirmation of your RSVP pending available seating. If you are bringing a guest or RSVPing on behalf of someone, please specify those names in ìAdditional Informationî below.</p>
+    <p class="title">RSVP <em>R√©pondez s'il vous pla√Æt, Reply if you please</em></p>
+    <p id="subheader" class="subheader">If you would like to attend our special screening event please fill out all required fields below and then click the SUBMIT button. You will receive email confirmation of your RSVP pending available seating. If you are bringing a guest or RSVPing on behalf of someone, please specify those names in ‚ÄúAdditional Information‚Äù below.</p>
     <form id="myform" action="riform.php" method="post">
       <div class="group_form">
         <div class="left"><label >Type</label></div>
@@ -499,7 +504,7 @@
 
 
 
-
+<script src="jquery.h5validate.js"></script>
 
 <script>
 jQuery(window).load(function () {
@@ -520,6 +525,14 @@ $("#videowrap").css('display','block');
 })
 
 
+
+});
+
+$(document).ready(function () {
+   
+   $('form').h5Validate({
+				errorClass:'black'
+			});
 
 });
 
