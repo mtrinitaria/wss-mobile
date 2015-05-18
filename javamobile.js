@@ -251,11 +251,13 @@ $(document).ready(function() {
     var int = setInterval(function() {
 
       $(".movement").css('opacity', '1');
-      $(".movement").css('-webkit-transform', "translateX(-200%)");
+      /*$(".movement").css('-webkit-transform', "translateX(-200%)");
       $(".movement").css('-moz-transform', "translateX(-200%)");
       $(".movement").css('-ms-transform', "translateX(-200%)");
       $(".movement").css('-o-transform', "translateX(-200%)");
-      $(".movement").css('transform', "translateX(-200%)");
+      $(".movement").css('transform', "translateX(-200%)");*/
+      $('#rsvp').show();
+      $('#contact1').hide();
       doOnOrientationChange();
       $("#button3").css('display', 'none');
       $("#button2").css('display', 'block');
@@ -351,12 +353,14 @@ $(document).ready(function() {
     var int = setInterval(function() {
 
       $(".movement").css('opacity', '1');
-      $(".movement").css('-webkit-transform', "translateX(-400%)");
+      /*$(".movement").css('-webkit-transform', "translateX(-400%)");
       $(".movement").css('-moz-transform', "translateX(-400%)");
       $(".movement").css('-ms-transform', "translateX(-400%)");
       $(".movement").css('-o-transform', "translateX(-400%)");
-      $(".movement").css('transform', "translateX(-400%)");
+      $(".movement").css('transform', "translateX(-400%)");*/
       doOnOrientationChange();
+      $('#contact1').show();
+      $('#rsvp').hide();
 
       $("#button2").css('display', 'none');
       $("#button3").css('display', 'block');
