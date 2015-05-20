@@ -50,6 +50,10 @@ function doOnOrientationChange() {
     if (rotcheck == 1) {
 
       $("#rotate").css("position", "fixed");
+      $("#rotate").css("-webkit-transform", "rotate(0deg)");
+      $("#rotate").css("-moz-transform", "rotate(0deg)");
+      $("#rotate").css("-ms-transform", "rotate(0deg)");
+      $("#rotate").css("-o-transform", "rotate(0deg)");
       $("#rotate").css("transform", "rotate(0deg)");
       $("#rotate").css("width", $(window).width() + 'px');
       $("#rotate").css("height", $(window).height() + 'px');
@@ -62,6 +66,10 @@ function doOnOrientationChange() {
 
     } else {
 
+      $("#rotate").css("-webkit-transform", "rotate(90deg)");
+      $("#rotate").css("-moz-transform", "rotate(90deg)");
+      $("#rotate").css("-ms-transform", "rotate(90deg)");
+      $("#rotate").css("-o-transform", "rotate(90deg)");
       $("#rotate").css("transform", "rotate(90deg)");
       $("#rotate").css("position", "fixed");
 
@@ -94,6 +102,10 @@ function doOnOrientationChange() {
 
 
     $("#rotate").css("position", "fixed");
+    $("#rotate").css("-webkit-transform", "rotate(0deg)");
+    $("#rotate").css("-moz-transform", "rotate(0deg)");
+    $("#rotate").css("-ms-transform", "rotate(0deg)");
+    $("#rotate").css("-o-transform", "rotate(0deg)");
     $("#rotate").css("transform", "rotate(0deg)");
     $("#rotate").css("width", $(window).width() + 'px');
     $("#rotate").css("height", $(window).height() + 'px');

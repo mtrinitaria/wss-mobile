@@ -80,6 +80,13 @@ select#type {
   float: right;
 }
 
+.form_page .btn_wrapper {
+  width: 100%;
+}
+.form_page .btn_wrapper button {
+  float: initial;
+}
+
 .submit_btn .btn_wrapper {
   float: initial;
   margin: 0 auto;
