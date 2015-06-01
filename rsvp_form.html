@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+<link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+
+<title>
+</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+<link type="text/css" href="stylemobile.css" rel="stylesheet"/>
+<link type="text/css" href="styles/form_mobile.css" rel="stylesheet"/>
+
+
+<style>
+.black{
+background-color:red;
+
+}
+</style>
+	
+
+
+
+</head>
+<body >
+
+
+
+
+<div id="menu">
+  <div class="menubtn_wrapper">
+    <div class="wss_logo" ><img src="images/wss-circle-logo2.svg" ></div>
+
+    <div class="btn_wrapper">
+      <button id="button2" class="myform" form="myform"><span>SUBMIT</span></button>
+    </div>
+
+    <div id="nav" class="nav_wrapper">
+    <ul>
+      <li><div id="menu0"><a href="index.html">HOME</a></div></li>
+      <li><div id="menu3">RSVP</div></li>
+      <li><div id="menu5"><a href="contact_form.html">CONTACT</a></div></li>
+    </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<div id="rsvp">
+  <div id="rsvp_form" class="form_page">
+    <p class="title">RSVP <em>R&#233;pondez s'il vous pla&#238;t, Reply if you please</em></p>
+    <p id="subheader" class="subheader">If you would like to attend our special screening event please fill out all required fields below and then click the SUBMIT button. You will receive email confirmation of your RSVP pending available seating. If you are bringing a guest or RSVPing on behalf of someone, please specify those names in &#8220;Additional Information&#8221; below.</p>
+    <form id="myform" action="riform.php" method="post">
+      <div class="group_form">
+        <div class="left"><label >Type</label></div>
+        <div class="right">
+          <select id="type2" class="select_type" name="selectrsvp" placeholder="Select Type">
+            <option value="" disabled selected>Select Type</option>
+            <option value="Agent">Agent</option>
+            <option value="Director">Director</option>
+            <option value="Media">Media</option>
+            <option value="Producer">Producer</option>
+            <option value="Publicist">Publicist</option>
+            <option value="Press">Press</option>
+            <option value="Talent">Talent</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >First Name</label></div>
+        <div class="right"><input type="text" id="first_name2" name="name1" placeholder="Enter Your First Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Last Name</label></div>
+        <div class="right"><input type="text" id="last_name2" name="name2" placeholder="Enter Last Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Company</label></div>
+        <div class="right"><input type="text" id="company2" name="name3" placeholder="Enter Company Name" required></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label >Email Address</label></div>
+        <div class="right"><input type="email" id="email2" name="email" placeholder="Enter Email Address" required></div>
+        <div class="full">
+          <input type="checkbox" id="form_check2" name="check" class="name4"><label class="check_lbl" >I would like to be considered for future events</label>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Phone Number</label></div>
+        <div class="right"><input type="text" id="phone2" name="name5" placeholder="Enter Phone Number" required onkeypress='validate(event)'></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Guest Requested</label></div>
+        <div class="right">
+          <select id="guest2" class="select_type" name="name6" placeholder="Number of Guests">
+            <option value="" disabled selected>Number of Guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label >Additional Information</label></div>
+        <div class="full">
+          <textarea type="text" id="info2" name="special2" placeholder="Enter Any Additional Information"></textarea>
+        </div>
+      </div>
+      <div class="group_form full_row submit_btn">
+        <div class="btn_wrapper">
+          <button class="myform" form="myform"><span>SUBMIT</span></button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+<script src="jquery-1.2.6.pack.js">
+
+</script>
+
+
+</body>
+
+
+</html>

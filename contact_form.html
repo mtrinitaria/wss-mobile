@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+<link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+
+<title>
+</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+<link type="text/css" href="stylemobile.css" rel="stylesheet"/>
+<link type="text/css" href="styles/form_mobile.css" rel="stylesheet"/>
+
+
+<style>
+.black{
+background-color:red;
+
+}
+</style>
+	
+
+
+
+</head>
+<body >
+
+<div id="menu">
+  <div class="menubtn_wrapper">
+    <div class="wss_logo" ><img src="images/wss-circle-logo2.svg" ></div>
+
+    <div class="btn_wrapper">
+      <button id="button2" class="myform" form="myform"><span>SUBMIT</span></button>
+    </div>
+
+    <div id="nav" class="nav_wrapper">
+    <ul>
+      <li><div id="menu0"><a href="index.html">HOME</a></div></li>
+      <li><div id="menu3"><a href="rsvp_form.html">RSVP</a></div></li>
+      <li><div id="menu5">CONTACT</div></li>
+    </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+<div id="contact1" >
+  <div id="contact_form" class="form_page">
+    <p class="title">Contact</p>
+    <p class="subheader">For all media and press concerns please use the form below. All fields required except for Company and Title.</p>
+    <form id="myform2" action="contactform.php" method="post">
+      <div class="group_form">
+        <div class="left"><label >Type</label></div>
+        <div class="right">
+          <select id="type" class="select_type" name="selectrsvp" placeholder="Select Type">
+            <option value="" disabled selected>Select Type</option>
+            <option value="Agent">Agent</option>
+            <option value="Director">Director</option>
+            <option value="Media">Media</option>
+            <option value="Producer">Producer</option>
+            <option value="Publicist">Publicist</option>
+            <option value="Press">Press</option>
+            <option value="Talent">Talent</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >First Name</label></div>
+        <div class="right"><input type="text" id="first_name" name="name1" placeholder="Enter Your First Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Last Name</label></div>
+        <div class="right"><input type="text" id="last_name" name="name2" placeholder="Enter Your Last Name" required></div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Company</label></div>
+        <div class="right"><input type="text" id="company" name="name3" placeholder="Enter Company Name" required></div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label >Email Address</label></div>
+        <div class="right"><input type="email" id="email" name="name4" placeholder="Enter Email Address" required></div>
+        <div class="full">
+          <input type="checkbox" id="form_check" name="check" class="form_check"><label class="check_lbl" >I would like to be considered for future events</label>
+        </div>
+      </div>
+      <div class="group_form">
+        <div class="left"><label >Guest Requested</label></div>
+        <!-- <div class="right"><input type="text" id="guest" name="name5" placeholder="Enter Number of Guests"></div> -->
+        <div class="right">
+          <select id="guest" class="select_type" name="name5" placeholder="Number of Guests">
+            <option value="" disabled selected>Number of Guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="group_form full_row">
+        <div class="left"><label >Additional Information</label></div>
+        <div class="full">
+          <textarea type="text" id="info" name="name6" placeholder="Enter Any Additional Information"></textarea>
+        </div>
+      </div>
+      <div class="group_form full_row submit_btn">
+        <div class="btn_wrapper">
+          <button class="myform" form="myform2"><span>SUBMIT</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<script src="jquery-1.2.6.pack.js">
+
+</script>
+
+
+</body>
+
+
+</html>
